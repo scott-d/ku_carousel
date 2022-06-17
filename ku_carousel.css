@@ -1,0 +1,115 @@
+/* ku_carousel plugin admin css */
+
+#wpwrap {
+	background: url(logo_light.svg) center center no-repeat !important;
+}
+
+#ku_carousel-form .tab-content:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+#ku_carousel-form .tab-content {
+	padding: 15px 0 0 15px;
+}
+
+#ku_carousel-form .ku_carousel-tab {
+	display: none;
+}
+
+#ku_carousel-form a.nav-tab:focus {
+	outline: none;
+}
+
+#ku_carousel-form .form-block {
+	margin-top: 5px;
+}
+
+#ku_carousel-form input[type=text] {
+	margin-top: 4px;
+	width: 218px;
+}
+
+#ku_carousel-form label {
+	display: block;
+}
+
+#ku_carousel-form select {
+	margin-top: 4px;
+	width: 218px;
+}
+
+#ku_carousel-form textarea {
+	margin-top: 4px;
+	width: 350px;
+	height: 200px;
+}
+
+#ku_carousel-form em {
+	font-style: normal;
+	display: block;
+	margin-bottom: 4px;
+}
+
+#ku_carousel-form .choose-colour-button {
+	position: relative;
+	height: 30px;
+	bottom: -4px;
+}
+
+#ku_carousel-form .switch {
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 24px;
+	margin: 3px 0;
+}
+
+#ku_carousel-form .switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+#ku_carousel-form .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	transition: .4s;
+	border-radius: 24px;
+}
+
+#ku_carousel-form .slider:before {
+	position: absolute;
+	content: "";
+	height: 16px;
+	width: 16px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	transition: .4s;
+	border-radius: 50%;
+}
+
+#ku_carousel-form input:checked + .slider {
+	background-color: #2271b1;
+}
+
+#ku_carousel-form input:focus + .slider {
+	box-shadow: 0 0 1px #2271b1;
+}
+
+#ku_carousel-form input:checked + .slider:before {
+	transform: translateX(26px);
+}
+
+.CodeMirror {
+	border: 1px solid #ddd;
+}
+
+/* EOF */
